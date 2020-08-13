@@ -1,8 +1,43 @@
 import React from 'react';
+import GlobalStyles from './styles/GlobalStyles';
+
+import Section from './components/Section'
+import texts from './data'
 
 function App() {
   return (
-    <h1>Hello World</h1>
+    <>
+    <Section 
+      variant="blue"
+      title={texts[0].title}
+      description={texts[0].description}
+    />
+
+    <Section 
+      variant="beige"
+      title={texts[1].title}
+      description={texts[1].description}
+    />
+
+    <Section 
+      variant="blue"
+      title={texts[2].title}
+      description={texts[2].description}
+    />
+
+    <Section 
+      variant="white"
+      title={texts[3].title}
+      description={texts[3].description}
+    />
+
+    <Section 
+      variant="black"
+      title={texts[4].title}
+      description={texts[4].description}
+    />
+    <GlobalStyles />
+    </>
   );
 }
 
