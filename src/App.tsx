@@ -4,6 +4,7 @@ import GlobalStyles from './styles/GlobalStyles';
 import Section from './components/Section'
 import SideMenu from './components/SideMenu'
 import texts from './data'
+import MenuForm from './components/MenuForm';
 
 function App() {
   return (
@@ -38,7 +39,9 @@ function App() {
       description={texts[4].description}
     />
 
-    <SideMenu />
+    <SideMenu>
+      <MenuForm />
+    </SideMenu>
     <GlobalStyles />
     </>
   );
